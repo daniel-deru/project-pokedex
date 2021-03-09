@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">P<span id="pokeball"></span>kedex</h1>
+        <div id="controls">
+           
+          
+       </div>
+     
+        <div id="get-pokemon">
+           
+           <img src="./pokeball.png" id="menu" alt="">
+          
+        </div>
+       
+    </header>
+    
+    <div id="names-container">
+        <i class="fas fa-times" id="names-icon"></i>
+        <ol id="names"></ol>
+    </div>
+
+    <div id="main-info">
+
+        <div id="pokemon">
+            <h1 id="name"></h1>
+            <div class="flex-controls">
+                <button id="previous" onclick="previous()"></button>
+                <div id="img"></div>
+                <button id="next" onclick="next()"></button>
+            </div>
+        
+        </div>
+      
+        <div id="stats-container">
+           <ul id="stats">
+                <li>type: <span id="types"></span></li>
+                <li>special ability: <span id="ability"></span></li>
+                <li>attack: <span id="attack"></span></li>
+                <li>defence: <span id="defence"></span></li>
+                <li>speed: <span id="speed"></span></li>
+                <li>health: <span id="health"></span></li>
+                <li>height: <span id="height"></span></li>
+                <li>weight: <span id="weight"></span></li>
+           </ul>
+        </div>
+    </div>
+
+
+    <div>
+        <h3 id="desc"></h3>
+    </div>
+
+    <div id="moves-container">
+        <div id="move-information">
+            <i class="fas fa-times" id="moves-icon"></i>
+            <h3 id="move-title"></h3>
+            <h4 id="move-desc"></h4>
+        </div>
+        <h1>moves</h1>
+        <ul id="moves"></ul>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
